@@ -16,8 +16,11 @@ I used Resnet-18 with mini-batch Stochasistic Gradient Descent and holdout cross
 * Momentum: .9
 * Epochs: 10
 - Train/Validation/Test Ratio: 80-10-10
-- 
 ## Dataset
+We use two datasets on Kaggle. The first is the [Face Mask Detection](https://www.kaggle.com/datasets/vijaykumar1799/face-mask-detection) which contains 3 classes (with mask, without a mask, and wearing mask incorrectly). This dataset contains 8982 images split evenly between the three classes. The images from this dataset were sourced from two other mask datasets([1](https://www.kaggle.com/datasets/ashishjangra27/face-mask-12k-images-dataset) and [2](https://www.kaggle.com/datasets/andrewmvd/face-mask-detection) so that no samples are noisy and the classes are evenly distributed. 
+
+My second Dataset is the 
+
 
 ## Results
 
