@@ -1,5 +1,8 @@
 # CSE 455 Project
 This project was worked on by Kevin Hoang for CSE 455: Computer Vision at UW for Spring Quarter 2023.
+
+https://github.com/khoang89/CSE455-BehaviorialProject/assets/108028863/cc013bf9-f808-4f4e-8b8c-4d829c5f0cc5
+
 ## Intro
 Computer Vision is a really powerful tool that can be applied to many problems in society, ranging from fields such as medicine to law. By teaching a neural network how to identify a problem visually, one can reduce the manpower required in many industries. My motivation is to see if computer vision to identify "reckless behaviors", such as drivers who don't wear seatbelts or people who litter. Such infractions may not be worth pursuing by authorities, but an automated system could be a way to curtail such behaviors without requiring additional manpower and funding. 
 
