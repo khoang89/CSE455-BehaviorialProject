@@ -17,11 +17,13 @@ I used Resnet-18 with mini-batch Stochasistic Gradient Descent and holdout cross
 * Epochs: 10
 - Train/Validation/Test Ratio: 80-10-10
 ## Dataset
-We use two datasets on Kaggle. The first is the [Face Mask Detection](https://www.kaggle.com/datasets/vijaykumar1799/face-mask-detection) which contains 3 classes (with mask, without a mask, and wearing mask incorrectly). This dataset contains 8982 images split evenly between the three classes. The images from this dataset were sourced from two other mask datasets([1](https://www.kaggle.com/datasets/ashishjangra27/face-mask-12k-images-dataset) and [2](https://www.kaggle.com/datasets/andrewmvd/face-mask-detection) so that no samples are noisy and the classes are evenly distributed. 
+We use two datasets on Kaggle. The first is the [Face Mask Detection](https://www.kaggle.com/datasets/vijaykumar1799/face-mask-detection) dataset which contains 3 classes (with mask, without a mask, and wearing mask incorrectly). This dataset contains 8982 images split evenly between the three classes. The images from this dataset were sourced from two other mask datasets([1](https://www.kaggle.com/datasets/ashishjangra27/face-mask-12k-images-dataset) and [2](https://www.kaggle.com/datasets/andrewmvd/face-mask-detection)) so that no samples are noisy and the classes are evenly distributed. 
 
-My second Dataset is the 
+Our second dataset is the [State Farm Distracted Driver Detection](https://www.kaggle.com/c/state-farm-distracted-driver-detection) which contains ten classes ( safe driving, texting - right, talking on the phone - right, texting - left, talking on the phone - left, operating the radio, drinking, reaching behind, hair and makeup, and talking to passenger). I didn't use their complete dataset, instead I used a subsection. There are 22,424 photos in the training folder separated into different directories based on class (just like the Face Mask data). I used these images as my overall dataset so that I won't have to cross reference their .csv file for class types.
 
+Each image is resized to 224 pixels and normalized by the same mean (0.485, 0.456, 0.406) and std values (0.229, 0.224, 0.225) that to be of the same format of the images ResNet was originally trained on. Each image has a 50 percent chance of being flipped horizontally so to prevent overfitting.  As stated before, the images in both datasets are then split into training, testing, and validation sets once.
 
-## Results
+## Results & Discussion
+![Mask Demonstration](/figures/Mask demonstration.png)
 
 ## Discussion
